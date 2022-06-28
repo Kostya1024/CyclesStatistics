@@ -1,6 +1,5 @@
 package ru.netology.stats;
 
-import java.lang.reflect.Array;
 import java.util.Arrays;
 
 public class Main {
@@ -23,7 +22,7 @@ public class Main {
         System.out.println(intMonthsHighestSales);      //Номера месяцев, в которых были пики продаж
 
         StatsService monthWithMinimumSales = new StatsService();
-        int[] monthsMinimumSales = monthWithHighestSales.monthWithMinimumSales(sales);
+        int[] monthsMinimumSales = monthWithMinimumSales.monthWithMinimumSales(sales);
         String intMonthsMinimumSales = Arrays.toString(monthsMinimumSales);     //приведение массива к строке
         System.out.println(intMonthsMinimumSales);      //Номера месяцев, в которых были минимумы продаж
 
